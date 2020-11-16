@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    width: 200vw;
+    height: 100vh;
+    position: fixed;
+}
+/* 배경이미지 슬라이드 */
+.travelslide {
+    display: flex;
+}
+
+.travelslide1 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/travelbackimg1.jpg);
+    /* background-attachment: fixed; */
+    /* position: absolute; */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.travelslide2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/travelbackimg2.jpg);
+    /* background-attachment: fixed; */
+    /* position: absolute;  */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.travelslide3 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/travelbackimg3.jpg);
+    
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.travelslide4 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/travelbackimg4.jpg);
+    
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+/* home메인페이지 */
+.homemain h2 {
+    font-family: Times New Roman;
+    position: absolute; top: 0;
+    font-size: 5rem;
+    padding: 1%;
+    color: #99ffff;
+ 
+}
+
+/* 메뉴바 */
+
+.menubar ul {
+    position: absolute; top: 10vh; left: 65vw;
+    font-size: 1.5rem;
+    font-family: Times New Roman;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.menubar li {
+    font-weight: 600;
+    width: 8rem; height: 4rem;
+        display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.menubar li:hover {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    /* background-color: black; */
+    color: #99ffff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+
+
+/* SNS바 */
+.snsbar {
+    display: flex;
+    align-items: center; 
+    position: absolute; top: 95vh;
+    width: 100vw; height: 5vh;
+    background-color: #99ccff;
+    overflow: hidden;
+}
+.snsdiv {
+    width: 10vw;
+    display: flex;
+    margin-left: 2vw;
+    justify-content: space-between;
+}
+
+.snsbar img {
+    width: 3.7vh;
+}
+
+/* a태그 블라인드애니 */
+.blindani {
+    position: absolute; top: 0;
+    width: 100vw;
+    height: 0vh;
+    background-color: #99ffff;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.blindani h2{
+    color: black;
+    position: absolute;
+}
+
+.blindani2 {
+    position: absolute; top: 0;
+    width: 100vw;
+    height: 0vh;
+    background-color: #99ffff;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.blindani2 h2{
+    color: black;
+    position: absolute;
+}

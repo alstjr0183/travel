@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html body {
+    background-color: hsl(210, 100%, 80%,0%);
+    width: 100%;
+    /* position: fixed; */
+}
+.featureboss{
+    display: flex;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+}
+/* 본문 */
+.featurebox {
+    position: relative;
+    z-index: 10;
+    width: 50vw;
+    height: 115vh;
+    background-color: white;
+    margin-top: 25vh;
+    font-family:  Times New Roman;
+    /* display: block; */
+}
+/* 본문 헤드 */
+.featurehead {
+    display: flex; 
+}
+
+.featurebox h2 {
+    font-size: 3rem;
+    padding-left: 2rem; padding-right: 2rem;
+    padding-top: 1rem; padding-bottom: 1rem;
+}
+
+.dottedboss {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    /* position: relative; bottom: 0.4rem; */
+}
+
+.dotted1 {
+    width: 37vw;
+    height: 1.5vh;
+    border: dotted;
+    border-width: 0.7px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.dotted2 {
+    width: 37vw;
+    height: 1.5vh;
+    border: dotted;
+    border-width: 0.7px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.dotted3 {
+    width: 37vw;
+    height: 1.5vh;
+    border: dotted;
+    border-width: 0.7px;
+    border-left: none;
+    border-right: none;
+}
+
+.dottedboss2 {
+    text-align: center;
+    border: dotted;
+    
+    width: 46.9vw;
+    height: 2vh;
+    margin-left: 1.7vw;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-width: 0.7px;
+}
+/* 본문 내용 */
+.contents {
+    width: 45vw;
+    height: 100vh;
+    /* border: solid; */
+    margin-left: 1.7vw;
+    font-family: Times New Roman;
+}
+
+.contents section {
+    /* border: solid; */
+    /* width: 40vw; */
+    height: 25vh;
+}
+
+.contents section img {
+    width: 46.9vw;
+    height: 25vh;
+}
+
+/* 본문 내용 - 컨텐츠박스 */
+.contentsscrollboss{
+    display: none;
+    position: relative;
+    z-index: 100;
+}
+
+.contentsscrollboss2{
+    display: none;
+    position: relative;
+    z-index: 100;
+}
+.contentsscrollboss3 {
+    display: none;
+    position: relative;
+    z-index: 100;
+}
+
+.contentsscrollhead{
+    width: 55vw; 
+    height: 8vh; 
+    background-color: #99ffff;
+     position: fixed; top: 12vh; left: 22.2vw;
+     display: flex;
+     align-items: center;
+}
+
+.contentscrollhead_feature{
+    margin-left: 1rem;
+    font-size: 3rem;
+}
+
+.contentscrollhead_x {
+    font-size: 5rem;
+    position: absolute; right: 1rem;
+    cursor: pointer;
+}
+
+.contentscrollhead_x2 {
+    font-size: 5rem;
+    position: absolute; right: 1rem;
+    cursor: pointer;
+}
+
+.contentscrollhead_x3 {
+    font-size: 5rem;
+    position: absolute; right: 1rem;
+    cursor: pointer;
+}
+
+.contentsscroll {
+    position: fixed; bottom: 10vh; left: 22.2vw;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 55vw;
+    height:70vh;
+}
+
+.contentsscroll::-webkit-scrollbar {
+    width: 10px;
+  }
+  .contentsscroll::-webkit-scrollbar-thumb {
+    background-color: #99ffff;;
+    border-radius: 10px;
+  }
+  .contentsscroll::-webkit-scrollbar-track {
+    /* background-color: hsl(210, 100%, 80%); */
+    border-radius: 10px;
+    /* box-shadow: inset 0px 0px 5px #99ffff;; */
+  }
+
+/* 메뉴 */
+.menubar  ul {
+    position: absolute; top: 10vh; left: 65vw;
+    z-index: 5;
+    font-size: 1.5rem;
+    font-family: Times New Roman;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+.menubar a:hover {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    /* background-color: black; */
+    color: #99ffff;
+
+}
+.menubar li {
+    font-weight: 600;
+    width: 8rem; height: 4rem;
+        display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.menubar li:hover {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    /* background-color: black; */
+    color: #99ffff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+/* SNS바 */
+.snsbar {
+    position: fixed;top: 95vh;
+    z-index: 11;
+    display: flex;
+    align-items: center; 
+    width: 100%; height: 5vh;
+    background-color: #99ffff;
+    overflow: hidden;
+}
+.snsdiv {
+    width: 10vw;
+    display: flex;
+    margin-left: 2vw;
+    justify-content: space-between;
+}
+
+.snsbar img {
+    width: 3.7vh;
+}
+
+
+
+/* 페이지 전환 애니메이션 */
+.blindani {
+    font-family: Times New Roman;
+    position: absolute;
+    width: 100%;
+    height: 0vh;
+    background-color: #99ffff;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 99;
+}
+.blindani h2{
+    font-size: 5rem;
+    position: absolute;
+}
+/* stay 이동 블라인드애니 */
+
+.blindani2 {
+    font-family: Times New Roman;
+    position: absolute; top: 0;
+    width: 100vw;
+    height: 0vh;
+    background-color: #99ffff;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 99;
+}
+.blindani2 h2{
+    font-size: 5rem;
+    color: black;
+    position: absolute;
+}
